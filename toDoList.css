@@ -1,0 +1,107 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background: #f2f2f2;
+  
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  width: 90%;
+  max-width: 500px;
+  background: royalblue;
+  padding: 25px;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.input-box {
+  display: flex;
+  gap: 10px;
+}
+
+#taskInput {
+  flex: 1;
+  padding: 12px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+#addBtn {
+  padding: 12px 15px;
+  background:coral;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#message {
+  color: red;
+  margin-top: 10px;
+  text-align: center;
+}
+
+#taskList {
+  list-style: none;
+  margin-top: 20px;
+}
+
+.task {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  background:cornflowerblue;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+}
+
+.task-text {
+  flex: 1;
+}
+
+.completed {
+  text-decoration: line-through;
+  color: gray;
+}
+
+.complete-btn {
+  padding: 7px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.delete-btn {
+  padding: 7px;
+  border: none;
+  border-radius: 4px;
+  background:lightpink;
+  color: black;
+  cursor: pointer;
+}
+
+@media (max-width: 500px) {
+  .input-box {
+    flex-direction: column;
+  }
+  
+  #addBtn {
+    width: 100%;
+  }
+}
